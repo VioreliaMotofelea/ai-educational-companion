@@ -1,0 +1,72 @@
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+pytestdebug.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ------------------------
+# Project Specific (recommended)
+# ------------------------
+# Synthetic data (not needed in repo if generated)
+data/*.tmp
+data/*.bak
+
+# If you want to ignore all large datasets:
+# data/*.csv
+
+# VS Code settings
+.vscode/
+
+# MacOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables / secrets
+.env
+*.env
+
+# ------------------------
+# Pyright / LSP cache (optional)
+# ------------------------
+typings/
+.pyright/
+
+# ------------------------
+# Docker artifacts
+# ------------------------
+docker-compose.override.yml

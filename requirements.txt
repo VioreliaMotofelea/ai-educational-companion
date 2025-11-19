@@ -1,0 +1,20 @@
+# Core scientific libraries
+numpy==1.26.4
+pandas==2.2.1
+scikit-learn==1.4.1
+
+# Optimization (for CP-SAT scheduler)
+ortools==9.8.3296
+
+# API framework (optional but useful for experiments)
+fastapi==0.110.0
+uvicorn==0.29.0
+
+# Testing framework
+pytest==8.1.1
+
+# Optional: Jupyter notebooks (if you want to experiment interactively)
+jupyter==1.0.0
+
+# Utilities
+python-dotenv==1.0.1
