@@ -1,7 +1,7 @@
 """
-Script pentru generarea datelor sintetice pentru studiu de caz.
-Generează: 10-20 users, 30 tasks, 50 resources, 20-50 interactions.
-Salvează în data/users.csv, data/tasks.csv, data/resources.csv, data/interactions.csv
+Script for generating synthetic data for case study.
+Generates: 10-20 users, 30 tasks, 50 resources, 20-50 interactions.
+Saves to data/users.csv, data/tasks.csv, data/resources.csv, data/interactions.csv
 """
 
 import pandas as pd
@@ -10,26 +10,21 @@ from datetime import datetime, timedelta
 import random
 import os
 
-# Seed pentru reproducibilitate
 np.random.seed(42)
 random.seed(42)
 
-# Domenii educaționale
 DOMAINS = ["Computer Science", "Mathematics", "Physics", "Chemistry", "Biology", 
            "Literature", "History", "Art", "Music", "Philosophy"]
 
-# Niveluri de dificultate
 DIFFICULTY_LEVELS = ["Beginner", "Intermediate", "Advanced"]
 
-# Tipuri de resurse
 RESOURCE_TYPES = ["Video", "Article", "Exercise", "Quiz", "Tutorial", "Book"]
 
 def generate_users(num_users=15):
-    """Generează 10-20 utilizatori cu preferințe și profiluri variate."""
+    """Generate 10-20 users with varied preferences and profiles."""
     users = []
     
     for i in range(1, num_users + 1):
-        # Preferințe: 1-3 domenii preferate
         num_preferences = random.randint(1, 3)
         preferences = random.sample(DOMAINS, num_preferences)
         
@@ -46,16 +41,14 @@ def generate_users(num_users=15):
     return pd.DataFrame(users)
 
 def generate_tasks(num_tasks=30):
-    """Generează 30 de task-uri cu deadline-uri și caracteristici variate."""
+    """Generate 30 tasks with varied deadlines and characteristics."""
     tasks = []
     base_date = datetime.now()
     
     for i in range(1, num_tasks + 1):
-        # Deadline între 1-60 zile în viitor
         days_ahead = random.randint(1, 60)
         deadline = base_date + timedelta(days=days_ahead)
         
-        # Durata estimată în ore
         estimated_hours = random.uniform(1, 8)
         
         tasks.append({
@@ -74,7 +67,7 @@ def generate_tasks(num_tasks=30):
     return pd.DataFrame(tasks)
 
 def generate_resources(num_resources=50):
-    """Generează 50 de resurse educaționale."""
+    """Generate 50 educational resources."""
     resources = []
     
     for i in range(1, num_resources + 1):
@@ -97,10 +90,9 @@ def generate_resources(num_resources=50):
     return pd.DataFrame(resources)
 
 def generate_interactions(num_interactions=35, num_users=15, num_resources=50):
-    """Generează 20-50 de interacțiuni între utilizatori și resurse."""
+    """Generate 20-50 interactions between users and resources."""
     interactions = []
     
-    # Asigurăm că fiecare user are cel puțin o interacțiune
     for user_id in range(1, num_users + 1):
         resource_id = random.randint(1, num_resources)
         rating = random.randint(1, 5)
@@ -116,12 +108,10 @@ def generate_interactions(num_interactions=35, num_users=15, num_resources=50):
             "interaction_date": (datetime.now() - timedelta(days=random.randint(0, 30))).isoformat()
         })
     
-    # Adăugăm interacțiuni suplimentare până la num_interactions
     while len(interactions) < num_interactions:
         user_id = random.randint(1, num_users)
         resource_id = random.randint(1, num_resources)
         
-        # Evităm duplicate-uri
         if not any(i["user_id"] == user_id and i["resource_id"] == resource_id for i in interactions):
             rating = random.randint(1, 5)
             completion = random.choice([True, False])
@@ -139,13 +129,11 @@ def generate_interactions(num_interactions=35, num_users=15, num_resources=50):
     return pd.DataFrame(interactions)
 
 def main():
-    """Funcția principală care generează toate datele și le salvează în CSV."""
+    """Main function that generates all data and saves to CSV."""
     print("Generating synthetic data...")
     
-    # Creează directorul data/ dacă nu există
     os.makedirs("data", exist_ok=True)
     
-    # Generează datele
     print("  - Generating users...")
     users_df = generate_users(num_users=15)
     
@@ -158,7 +146,6 @@ def main():
     print("  - Generating interactions...")
     interactions_df = generate_interactions(num_interactions=40, num_users=15, num_resources=50)
     
-    # Salvează în CSV
     print("\nSaving to CSV files...")
     users_df.to_csv("data/users.csv", index=False)
     print(f"  [OK] Saved {len(users_df)} users to data/users.csv")
@@ -181,4 +168,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

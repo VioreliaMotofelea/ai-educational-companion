@@ -1,37 +1,32 @@
 """
-Experiment pentru sistemul de recomandare.
-Încarcă datele, creează modelul, generează top-5 recomandări pentru 2-3 utilizatori,
-și calculează metrici (ex: câte recomandări sunt din domeniul preferat).
+Experiment for the recommendation system.
+Loads data, creates model, generates top-5 recommendations for 2-3 users,
+and calculates metrics (e.g., how many recommendations are from preferred domain).
 """
 
 import sys
 import os
 
-# Adaugă directorul src la path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.ai_core.recommender import HybridRecommender
 import pandas as pd
 
 def main():
-    """Rulează experimentul de recomandare."""
+    """Run the recommender experiment."""
     print("=" * 60)
     print("RECOMMENDER EXPERIMENT")
     print("=" * 60)
     
-    # Inițializează recomandatorul
     print("\n1. Initializing recommender...")
     recommender = HybridRecommender(data_dir="data")
     
-    # Încarcă datele
     print("\n2. Loading data...")
     recommender.load_data()
     
-    # Antrenează modelul
     print("\n3. Training model...")
     recommender.fit()
     
-    # Selectează 2-3 utilizatori pentru testare
     test_users = [1, 2, 3]
     
     print("\n4. Generating recommendations...")
@@ -42,13 +37,11 @@ def main():
     for user_id in test_users:
         print(f"\n--- User {user_id} ---")
         
-        # Obține preferințele utilizatorului
         preferences = recommender.get_user_preferences(user_id)
         print(f"Preferred domains: {', '.join(preferences['preferred_domains'])}")
         print(f"Experience level: {preferences['experience_level']}")
         print(f"Learning style: {preferences['learning_style']}")
         
-        # Generează recomandări
         recommendations = recommender.recommend_for_user(user_id, k=5)
         
         print(f"\nTop 5 Recommendations:")
@@ -69,7 +62,6 @@ def main():
             print(f"   Hybrid Score: {rec['hybrid_score']:.3f}")
             print()
         
-        # Calculează metrici
         metrics = {
             'user_id': user_id,
             'total_recommendations': len(recommendations),
@@ -88,7 +80,6 @@ def main():
         print(f"  - Average content-based score: {metrics['avg_content_score']:.3f}")
         print(f"  - Average collaborative score: {metrics['avg_collaborative_score']:.3f}")
     
-    # Rezumat general
     print("\n" + "=" * 60)
     print("OVERALL METRICS")
     print("=" * 60)
@@ -100,7 +91,6 @@ def main():
         print(f"\nAverage domain match rate: {avg_domain_match:.2%}")
         print(f"Average hybrid score: {avg_hybrid_score:.3f}")
         
-        # Tabel cu toate metricile
         print("\nDetailed Metrics Table:")
         print("-" * 60)
         metrics_df = pd.DataFrame(all_metrics)
@@ -112,4 +102,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -1,39 +1,34 @@
 """
-Experiment pentru sistemul de gamificare.
-Simulează 5 zile în care utilizatorul face sau nu task-uri,
-și afișează XP și streak-ul.
+Experiment for the gamification system.
+Simulates 5 days where the user completes or skips tasks,
+and displays XP and streak.
 """
 
 import sys
 import os
 import numpy as np
 
-# Adaugă directorul src la path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.ai_core.gamification import GamificationSystem
 from datetime import datetime, timedelta
 
 def main():
-    """Rulează experimentul de gamificare."""
+    """Run the gamification experiment."""
     print("=" * 60)
     print("GAMIFICATION EXPERIMENT")
     print("=" * 60)
     
-    # Inițializează sistemul de gamificare
     print("\n1. Initializing gamification system...")
     gamification = GamificationSystem(data_dir="data")
     
-    # Încarcă datele
     print("\n2. Loading data...")
     gamification.load_data()
     
-    # Simulează pentru utilizatorul 1
     user_id = 1
     print(f"\n3. Simulating 5 days for User {user_id}...")
     print("=" * 60)
     
-    # Inițializează statisticile utilizatorului
     user_stats = gamification.initialize_user_stats(user_id)
     
     print(f"\nInitial Stats:")
@@ -43,11 +38,9 @@ def main():
     print(f"  - Completed Tasks: {user_stats['completed_tasks']}")
     print(f"  - Badges: {len(user_stats['badges'])}")
     
-    # Simulează 5 zile
     print("\n4. Daily Activity Simulation:")
     print("=" * 60)
     
-    # Set seed pentru reproducibilitate
     np.random.seed(42)
     
     events = gamification.simulate_days(user_stats, days=5, completion_rate=0.7)
@@ -73,7 +66,6 @@ def main():
             print("[SKIP] No task completed")
             print(f"  Current Streak: {user_stats['current_streak']} days")
     
-    # Statistici finale
     print("\n" + "=" * 60)
     print("FINAL STATISTICS")
     print("=" * 60)
@@ -95,7 +87,6 @@ def main():
     else:
         print("    (No badges yet)")
     
-    # Rezumat al zilelor
     print("\n" + "=" * 60)
     print("SIMULATION SUMMARY")
     print("=" * 60)
@@ -116,4 +107,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

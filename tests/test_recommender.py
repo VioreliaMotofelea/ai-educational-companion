@@ -1,27 +1,26 @@
 """
-Teste pentru sistemul de recomandare.
-Verifică că recommend_for_user() întoarce exact k rezultate și că nu pica.
+Tests for the recommendation system.
+Verifies that recommend_for_user() returns exactly k results and doesn't fail.
 """
 
 import sys
 import os
 import pytest
 
-# Adaugă directorul src la path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.ai_core.recommender import HybridRecommender
 
 class TestRecommender:
-    """Teste pentru HybridRecommender."""
+    """Tests for HybridRecommender."""
     
     @pytest.fixture
     def recommender(self):
-        """Creează o instanță de recomandator pentru teste."""
+        """Create a recommender instance for tests."""
         return HybridRecommender(data_dir="data")
     
     def test_load_data(self, recommender):
-        """Testează încărcarea datelor."""
+        """Test data loading."""
         recommender.load_data()
         
         assert recommender.users_df is not None
@@ -31,7 +30,7 @@ class TestRecommender:
         assert len(recommender.resources_df) > 0
     
     def test_fit(self, recommender):
-        """Testează antrenarea modelului."""
+        """Test model training."""
         recommender.load_data()
         recommender.fit()
         
@@ -41,7 +40,7 @@ class TestRecommender:
         assert recommender.user_resource_matrix is not None
     
     def test_recommend_for_user_returns_k_results(self, recommender):
-        """Testează că recommend_for_user() întoarce exact k rezultate."""
+        """Test that recommend_for_user() returns exactly k results."""
         recommender.load_data()
         recommender.fit()
         
@@ -50,12 +49,11 @@ class TestRecommender:
         
         recommendations = recommender.recommend_for_user(user_id, k=k)
         
-        # Verifică că avem exact k recomandări (sau mai puțin dacă nu sunt suficiente resurse)
         assert len(recommendations) <= k
-        assert len(recommendations) > 0  # Ar trebui să avem cel puțin o recomandare
+        assert len(recommendations) > 0
     
     def test_recommend_for_user_structure(self, recommender):
-        """Testează structura rezultatelor recomandărilor."""
+        """Test the structure of recommendation results."""
         recommender.load_data()
         recommender.fit()
         
@@ -67,7 +65,6 @@ class TestRecommender:
         if len(recommendations) > 0:
             rec = recommendations[0]
             
-            # Verifică că fiecare recomandare are câmpurile necesare
             assert 'resource_id' in rec
             assert 'title' in rec
             assert 'domain' in rec
@@ -75,13 +72,12 @@ class TestRecommender:
             assert 'content_based_score' in rec
             assert 'collaborative_score' in rec
             
-            # Verifică că scorurile sunt în intervalul valid
             assert 0 <= rec['hybrid_score'] <= 1
             assert 0 <= rec['content_based_score'] <= 1
             assert 0 <= rec['collaborative_score'] <= 1
     
     def test_recommend_for_user_sorted(self, recommender):
-        """Testează că recomandările sunt sortate descrescător după scor."""
+        """Test that recommendations are sorted in descending order by score."""
         recommender.load_data()
         recommender.fit()
         
@@ -91,12 +87,11 @@ class TestRecommender:
         recommendations = recommender.recommend_for_user(user_id, k=k)
         
         if len(recommendations) > 1:
-            # Verifică că sunt sortate descrescător
             scores = [r['hybrid_score'] for r in recommendations]
             assert scores == sorted(scores, reverse=True)
     
     def test_recommend_for_user_no_duplicates(self, recommender):
-        """Testează că nu există duplicate în recomandări."""
+        """Test that there are no duplicates in recommendations."""
         recommender.load_data()
         recommender.fit()
         
@@ -105,18 +100,16 @@ class TestRecommender:
         
         recommendations = recommender.recommend_for_user(user_id, k=k)
         
-        # Verifică că nu există duplicate după resource_id
         resource_ids = [r['resource_id'] for r in recommendations]
         assert len(resource_ids) == len(set(resource_ids))
     
     def test_recommend_for_user_excludes_viewed(self, recommender):
-        """Testează că recomandările nu includ resurse deja văzute."""
+        """Test that recommendations don't include already viewed resources."""
         recommender.load_data()
         recommender.fit()
         
         user_id = 1
         
-        # Obține resursele văzute de utilizator
         viewed_resources = set(
             recommender.interactions_df[
                 recommender.interactions_df['user_id'] == user_id
@@ -125,12 +118,11 @@ class TestRecommender:
         
         recommendations = recommender.recommend_for_user(user_id, k=10)
         
-        # Verifică că niciuna dintre recomandări nu este în resursele văzute
         recommended_ids = [r['resource_id'] for r in recommendations]
         assert len(set(recommended_ids) & viewed_resources) == 0
     
     def test_get_user_preferences(self, recommender):
-        """Testează obținerea preferințelor utilizatorului."""
+        """Test getting user preferences."""
         recommender.load_data()
         
         user_id = 1
@@ -142,7 +134,7 @@ class TestRecommender:
         assert isinstance(preferences['preferred_domains'], list)
     
     def test_recommend_for_user_multiple_users(self, recommender):
-        """Testează recomandările pentru mai mulți utilizatori."""
+        """Test recommendations for multiple users."""
         recommender.load_data()
         recommender.fit()
         
@@ -156,4 +148,3 @@ class TestRecommender:
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
-

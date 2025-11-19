@@ -1,36 +1,32 @@
 """
-Experiment pentru sistemul de planificare.
-Încarcă task-urile din CSV, rulează EDF, afișează ordinea,
-și compară cu planificarea CP-SAT.
+Experiment for the scheduling system.
+Loads tasks from CSV, runs EDF, displays order,
+and compares with CP-SAT scheduling.
 """
 
 import sys
 import os
 
-# Adaugă directorul src la path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.ai_core.scheduler import Scheduler
 from datetime import datetime
 
 def main():
-    """Rulează experimentul de planificare."""
+    """Run the scheduler experiment."""
     print("=" * 60)
     print("SCHEDULER EXPERIMENT")
     print("=" * 60)
     
-    # Inițializează scheduler-ul
     print("\n1. Initializing scheduler...")
     scheduler = Scheduler(data_dir="data")
     
-    # Încarcă task-urile
     print("\n2. Loading tasks...")
     scheduler.load_tasks()
     
     tasks = scheduler.tasks_to_list()
     print(f"Loaded {len(tasks)} tasks")
     
-    # Planificare EDF
     print("\n3. Running EDF (Earliest Deadline First) scheduling...")
     print("=" * 60)
     edf_schedule = scheduler.edf_schedule(tasks)
@@ -55,7 +51,6 @@ def main():
         print(f"     Status: {on_time} {'On time' if on_time == '[OK]' else f'Late by {lateness:.2f}h'}")
         print()
     
-    # Planificare CP-SAT
     print("\n4. Running CP-SAT optimization...")
     print("=" * 60)
     cp_sat_result = scheduler.cp_sat_schedule(tasks, max_hours_per_day=8.0)
@@ -87,7 +82,6 @@ def main():
         print(f"\nCP-SAT Status: {cp_sat_result['status']}")
         print(f"Message: {cp_sat_result.get('message', 'N/A')}")
     
-    # Comparație
     print("\n5. Comparing EDF vs CP-SAT...")
     print("=" * 60)
     
@@ -126,4 +120,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

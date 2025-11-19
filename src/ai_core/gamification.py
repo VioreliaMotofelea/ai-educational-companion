@@ -1,6 +1,6 @@
 """
-Sistem de gamificare pentru companion-ul educațional.
-Implementează XP, streak-uri și badge-uri.
+Gamification system for the educational companion.
+Implements XP, streaks, and badges.
 """
 
 import pandas as pd
@@ -11,24 +11,23 @@ import os
 
 class GamificationSystem:
     """
-    Sistem de gamificare care urmărește:
-    - XP (Experience Points) - crește la completarea task-urilor
-    - Streak - zile consecutive de activitate
-    - Badge-uri - realizări speciale
+    Gamification system that tracks:
+    - XP (Experience Points) - increases when completing tasks
+    - Streak - consecutive days of activity
+    - Badges - special achievements
     """
     
     def __init__(self, data_dir: str = "data"):
         """
-        Inițializează sistemul de gamificare.
+        Initialize the gamification system.
         
         Args:
-            data_dir: Directorul unde se află fișierele CSV
+            data_dir: Directory where CSV files are located
         """
         self.data_dir = data_dir
         self.users_df = None
         self.tasks_df = None
         
-        # Badge-uri disponibile
         self.badges = {
             'first_task': {'name': 'First Steps', 'description': 'Complete your first task', 'xp_reward': 10},
             'streak_3': {'name': 'On Fire', 'description': '3 day streak', 'xp_reward': 25},
@@ -42,7 +41,7 @@ class GamificationSystem:
         }
     
     def load_data(self):
-        """Încarcă datele din fișierele CSV."""
+        """Load data from CSV files."""
         users_path = os.path.join(self.data_dir, "users.csv")
         tasks_path = os.path.join(self.data_dir, "tasks.csv")
         
@@ -51,19 +50,18 @@ class GamificationSystem:
         
         self.users_df = pd.read_csv(users_path)
         self.tasks_df = pd.read_csv(tasks_path)
-        # Convertește datele la datetime
         if 'created_at' in self.tasks_df.columns:
             self.tasks_df['created_at'] = pd.to_datetime(self.tasks_df['created_at'])
     
     def initialize_user_stats(self, user_id: int) -> Dict:
         """
-        Inițializează statisticile unui utilizator.
+        Initialize user statistics.
         
         Args:
-            user_id: ID-ul utilizatorului
+            user_id: User ID
         
         Returns:
-            Dicționar cu statisticile inițiale
+            Dictionary with initial statistics
         """
         return {
             'user_id': user_id,
@@ -78,14 +76,14 @@ class GamificationSystem:
     
     def calculate_level(self, xp: int) -> int:
         """
-        Calculează nivelul pe baza XP-ului.
+        Calculate level based on XP.
         Formula: level = 1 + sqrt(xp / 100)
         
         Args:
             xp: Experience points
         
         Returns:
-            Nivelul utilizatorului
+            User level
         """
         import math
         return 1 + int(math.sqrt(xp / 100))
@@ -93,20 +91,19 @@ class GamificationSystem:
     def complete_task(self, user_stats: Dict, task_difficulty: str = "Medium", 
                      date: Optional[datetime] = None) -> Dict:
         """
-        Procesează completarea unui task și actualizează statisticile.
+        Process task completion and update statistics.
         
         Args:
-            user_stats: Statisticile curente ale utilizatorului
-            task_difficulty: Dificultatea task-ului
-            date: Data completării (dacă None, folosește data curentă)
+            user_stats: Current user statistics
+            task_difficulty: Task difficulty
+            date: Completion date (if None, uses current date)
         
         Returns:
-            Dicționar cu actualizările și evenimentele (badge-uri câștigate)
+            Dictionary with updates and events (badges earned)
         """
         if date is None:
             date = datetime.now()
         
-        # XP reward bazat pe dificultate
         xp_rewards = {
             'Beginner': 10,
             'Intermediate': 20,
@@ -114,23 +111,18 @@ class GamificationSystem:
         }
         xp_gain = xp_rewards.get(task_difficulty, 15)
         
-        # Actualizează XP
         old_xp = user_stats['xp']
         user_stats['xp'] += xp_gain
         user_stats['completed_tasks'] += 1
         
-        # Actualizează nivelul
         old_level = user_stats['level']
         user_stats['level'] = self.calculate_level(user_stats['xp'])
         level_up = user_stats['level'] > old_level
         
-        # Actualizează streak-ul
         last_activity = user_stats.get('last_activity_date')
         if last_activity is None:
-            # Prima activitate
             user_stats['current_streak'] = 1
         else:
-            # Verifică dacă este o zi consecutivă
             if isinstance(last_activity, str):
                 last_activity = pd.to_datetime(last_activity)
             if isinstance(date, str):
@@ -139,30 +131,24 @@ class GamificationSystem:
             days_diff = (date.date() - last_activity.date()).days
             
             if days_diff == 0:
-                # Aceeași zi - nu schimbă streak-ul
                 pass
             elif days_diff == 1:
-                # Zi consecutivă - crește streak-ul
                 user_stats['current_streak'] += 1
             else:
-                # Streak-ul s-a întrerupt
                 if user_stats['current_streak'] > user_stats['longest_streak']:
                     user_stats['longest_streak'] = user_stats['current_streak']
                 user_stats['current_streak'] = 1
         
         user_stats['last_activity_date'] = date.isoformat() if isinstance(date, datetime) else date
         
-        # Verifică badge-uri noi
         new_badges = []
         earned_badges = set(user_stats.get('badges', []))
         
-        # Badge pentru primul task
         if user_stats['completed_tasks'] == 1 and 'first_task' not in earned_badges:
             new_badges.append('first_task')
             earned_badges.add('first_task')
             user_stats['xp'] += self.badges['first_task']['xp_reward']
         
-        # Badge-uri pentru streak
         streak = user_stats['current_streak']
         if streak >= 3 and 'streak_3' not in earned_badges:
             new_badges.append('streak_3')
@@ -177,7 +163,6 @@ class GamificationSystem:
             earned_badges.add('streak_30')
             user_stats['xp'] += self.badges['streak_30']['xp_reward']
         
-        # Badge-uri pentru XP
         xp = user_stats['xp']
         if xp >= 100 and 'xp_100' not in earned_badges:
             new_badges.append('xp_100')
@@ -189,7 +174,6 @@ class GamificationSystem:
             new_badges.append('xp_1000')
             earned_badges.add('xp_1000')
         
-        # Badge-uri pentru numărul de task-uri
         completed = user_stats['completed_tasks']
         if completed >= 10 and 'tasks_10' not in earned_badges:
             new_badges.append('tasks_10')
@@ -202,7 +186,6 @@ class GamificationSystem:
         
         user_stats['badges'] = list(earned_badges)
         
-        # Recalculează nivelul după badge-uri (care pot da XP)
         user_stats['level'] = self.calculate_level(user_stats['xp'])
         
         return {
@@ -217,14 +200,14 @@ class GamificationSystem:
     
     def get_user_stats(self, user_id: int, user_stats: Dict) -> Dict:
         """
-        Returnează statisticile complete ale unui utilizator.
+        Return complete user statistics.
         
         Args:
-            user_id: ID-ul utilizatorului
-            user_stats: Statisticile utilizatorului
+            user_id: User ID
+            user_stats: User statistics
         
         Returns:
-            Dicționar cu statisticile formate
+            Dictionary with formatted statistics
         """
         badge_details = [self.badges[badge] for badge in user_stats.get('badges', [])]
         
@@ -236,21 +219,21 @@ class GamificationSystem:
             'longest_streak': user_stats['longest_streak'],
             'completed_tasks': user_stats['completed_tasks'],
             'badges': badge_details,
-            'next_level_xp': (user_stats['level'] ** 2) * 100  # XP necesar pentru următorul nivel
+            'next_level_xp': (user_stats['level'] ** 2) * 100
         }
     
     def simulate_days(self, user_stats: Dict, days: int, 
                      completion_rate: float = 0.7) -> List[Dict]:
         """
-        Simulează activitatea utilizatorului pe mai multe zile.
+        Simulate user activity over multiple days.
         
         Args:
-            user_stats: Statisticile inițiale
-            days: Numărul de zile de simulat
-            completion_rate: Probabilitatea de a completa un task într-o zi (0-1)
+            user_stats: Initial statistics
+            days: Number of days to simulate
+            completion_rate: Probability of completing a task in a day (0-1)
         
         Returns:
-            Lista cu evenimentele zilnice
+            List with daily events
         """
         events = []
         base_date = datetime.now() - timedelta(days=days)
@@ -258,9 +241,7 @@ class GamificationSystem:
         for day in range(days):
             date = base_date + timedelta(days=day)
             
-            # Decide dacă utilizatorul completează un task în această zi
             if np.random.random() < completion_rate:
-                # Alege o dificultate aleatorie
                 difficulty = np.random.choice(['Beginner', 'Intermediate', 'Advanced'], 
                                                 p=[0.4, 0.4, 0.2])
                 
@@ -273,7 +254,6 @@ class GamificationSystem:
                     **result
                 })
             else:
-                # Nu completează task - verifică dacă se întrerupe streak-ul
                 last_activity = user_stats.get('last_activity_date')
                 if last_activity:
                     if isinstance(last_activity, str):
@@ -281,7 +261,6 @@ class GamificationSystem:
                     days_diff = (date.date() - last_activity.date()).days
                     
                     if days_diff > 1:
-                        # Streak-ul s-a întrerupt
                         if user_stats['current_streak'] > user_stats['longest_streak']:
                             user_stats['longest_streak'] = user_stats['current_streak']
                         user_stats['current_streak'] = 0
@@ -293,4 +272,3 @@ class GamificationSystem:
                 })
         
         return events
-

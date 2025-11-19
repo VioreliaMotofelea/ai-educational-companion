@@ -1,6 +1,6 @@
 """
-Sistem de planificare (scheduling) pentru task-uri educaționale.
-Implementează EDF (Earliest Deadline First) și CP-SAT cu OR-Tools.
+Task scheduling system for educational tasks.
+Implements EDF (Earliest Deadline First) and CP-SAT with OR-Tools.
 """
 
 import pandas as pd
@@ -10,7 +10,7 @@ from ortools.sat.python import cp_model
 import os
 
 class Task:
-    """Clasă pentru reprezentarea unui task."""
+    """Class for representing a task."""
     
     def __init__(self, task_id: int, title: str, deadline: datetime, 
                  estimated_hours: float, priority: str = "Medium"):
@@ -25,39 +25,38 @@ class Task:
 
 class Scheduler:
     """
-    Sistem de planificare care suportă:
-    - EDF (Earliest Deadline First) - baseline simplu
-    - CP-SAT cu OR-Tools - optimizare avansată
+    Scheduling system that supports:
+    - EDF (Earliest Deadline First) - simple baseline
+    - CP-SAT with OR-Tools - advanced optimization
     """
     
     def __init__(self, data_dir: str = "data"):
         """
-        Inițializează scheduler-ul.
+        Initialize the scheduler.
         
         Args:
-            data_dir: Directorul unde se află fișierele CSV
+            data_dir: Directory where CSV files are located
         """
         self.data_dir = data_dir
         self.tasks_df = None
     
     def load_tasks(self):
-        """Încarcă task-urile din fișierul CSV."""
+        """Load tasks from CSV file."""
         tasks_path = os.path.join(self.data_dir, "tasks.csv")
         
         if not os.path.exists(tasks_path):
             raise FileNotFoundError(f"Tasks file not found in {self.data_dir}. Run generate_synthetic_data.py first.")
         
         self.tasks_df = pd.read_csv(tasks_path)
-        # Convertește deadline-urile la datetime
         self.tasks_df['deadline'] = pd.to_datetime(self.tasks_df['deadline'])
         print(f"Loaded {len(self.tasks_df)} tasks")
     
     def tasks_to_list(self) -> List[Task]:
         """
-        Convertește DataFrame-ul la listă de obiecte Task.
+        Convert DataFrame to list of Task objects.
         
         Returns:
-            Lista de obiecte Task
+            List of Task objects
         """
         if self.tasks_df is None:
             self.load_tasks()
@@ -77,19 +76,18 @@ class Scheduler:
     
     def edf_schedule(self, tasks: Optional[List[Task]] = None) -> List[Task]:
         """
-        Planificare EDF (Earliest Deadline First) - baseline simplu.
-        Sortează task-urile după deadline.
+        EDF (Earliest Deadline First) scheduling - simple baseline.
+        Sorts tasks by deadline.
         
         Args:
-            tasks: Lista de task-uri (opțional, dacă None, încarcă din CSV)
+            tasks: List of tasks (optional, if None, loads from CSV)
         
         Returns:
-            Lista de task-uri sortată după deadline
+            List of tasks sorted by deadline
         """
         if tasks is None:
             tasks = self.tasks_to_list()
         
-        # Sortează după deadline
         sorted_tasks = sorted(tasks, key=lambda t: t.deadline)
         
         return sorted_tasks
@@ -97,15 +95,15 @@ class Scheduler:
     def cp_sat_schedule(self, tasks: Optional[List[Task]] = None, 
                        max_hours_per_day: float = 8.0) -> Dict:
         """
-        Planificare optimizată cu CP-SAT (OR-Tools).
-        Optimizează pentru a minimiza întârzierile și a respecta deadline-urile.
+        Optimized scheduling with CP-SAT (OR-Tools).
+        Optimizes to minimize lateness and respect deadlines.
         
         Args:
-            tasks: Lista de task-uri (opțional)
-            max_hours_per_day: Numărul maxim de ore pe zi
+            tasks: List of tasks (optional)
+            max_hours_per_day: Maximum number of hours per day
         
         Returns:
-            Dicționar cu planificarea optimizată și statistici
+            Dictionary with optimized schedule and statistics
         """
         if tasks is None:
             tasks = self.tasks_to_list()
@@ -113,45 +111,32 @@ class Scheduler:
         if len(tasks) == 0:
             return {'schedule': [], 'status': 'INFEASIBLE', 'message': 'No tasks to schedule'}
         
-        # Creează modelul CP-SAT
         model = cp_model.CpModel()
         
-        # Variabile de decizie
         num_tasks = len(tasks)
         start_times = [model.NewIntVar(0, 1000, f'start_{i}') for i in range(num_tasks)]
         end_times = [model.NewIntVar(0, 1000, f'end_{i}') for i in range(num_tasks)]
         
-        # Variabile pentru ordinea task-urilor
-        # task_order[i][j] = 1 dacă task i este înainte de task j
         task_order = {}
         for i in range(num_tasks):
             for j in range(i + 1, num_tasks):
                 task_order[(i, j)] = model.NewBoolVar(f'order_{i}_{j}')
         
-        # Constrângeri de bază
         for i in range(num_tasks):
-            # end_time = start_time + duration
             model.Add(end_times[i] == start_times[i] + int(tasks[i].estimated_hours))
             
-            # Task-ul trebuie să înceapă după momentul curent (ziua 0)
             model.Add(start_times[i] >= 0)
             
-            # Deadline constraint (convertim deadline-ul la zile de la momentul curent)
             now = datetime.now()
             deadline_days = (tasks[i].deadline - now).days
             if deadline_days > 0:
                 model.Add(end_times[i] <= deadline_days * int(max_hours_per_day))
         
-        # Constrângeri de ordine: task-urile nu se suprapun
         for i in range(num_tasks):
             for j in range(i + 1, num_tasks):
-                # Dacă i este înainte de j
                 model.Add(start_times[j] >= end_times[i]).OnlyEnforceIf(task_order[(i, j)])
-                # Dacă j este înainte de i
                 model.Add(start_times[i] >= end_times[j]).OnlyEnforceIf(task_order[(i, j)].Not())
         
-        # Funcție obiectiv: minimizăm suma întârzierilor
-        # Pentru task-urile care depășesc deadline-ul
         lateness = []
         for i in range(num_tasks):
             now = datetime.now()
@@ -164,23 +149,19 @@ class Scheduler:
             else:
                 lateness.append(model.NewConstant(0))
         
-        # Minimizăm suma întârzierilor
         model.Minimize(sum(lateness))
         
-        # Rezolvă modelul
         solver = cp_model.CpSolver()
-        solver.parameters.max_time_in_seconds = 10.0  # Limită de timp pentru demo
+        solver.parameters.max_time_in_seconds = 10.0
         
         status = solver.Solve(model)
         
         if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
-            # Construiește planificarea
             scheduled_tasks = []
             for i in range(num_tasks):
                 start_hour = solver.Value(start_times[i])
                 end_hour = solver.Value(end_times[i])
                 
-                # Calculează întârzierea
                 now = datetime.now()
                 deadline_hours = (tasks[i].deadline - now).total_seconds() / 3600
                 lateness_hours = max(0, end_hour - deadline_hours) if deadline_hours > 0 else 0
@@ -193,7 +174,6 @@ class Scheduler:
                     'on_time': lateness_hours == 0
                 })
             
-            # Sortează după start_hour
             scheduled_tasks.sort(key=lambda x: x['start_hour'])
             
             return {
@@ -211,23 +191,21 @@ class Scheduler:
     
     def compare_schedules(self, edf_tasks: List[Task], cp_sat_result: Dict) -> Dict:
         """
-        Compară planificările EDF și CP-SAT.
+        Compare EDF and CP-SAT schedules.
         
         Args:
-            edf_tasks: Lista de task-uri din EDF
-            cp_sat_result: Rezultatul din CP-SAT
+            edf_tasks: List of tasks from EDF
+            cp_sat_result: Result from CP-SAT
         
         Returns:
-            Dicționar cu comparația
+            Dictionary with comparison
         """
         now = datetime.now()
         
-        # Calculează metrici pentru EDF
         edf_lateness = []
         edf_on_time = 0
         for task in edf_tasks:
             deadline_hours = (task.deadline - now).total_seconds() / 3600
-            # Simulăm că task-urile sunt făcute secvențial
             cumulative_hours = sum(t.estimated_hours for t in edf_tasks[:edf_tasks.index(task) + 1])
             lateness = max(0, cumulative_hours - deadline_hours) if deadline_hours > 0 else 0
             edf_lateness.append(lateness)
@@ -236,7 +214,6 @@ class Scheduler:
         
         edf_total_lateness = sum(edf_lateness)
         
-        # Metrici pentru CP-SAT
         cp_sat_total_lateness = cp_sat_result.get('total_lateness', 0)
         cp_sat_on_time = cp_sat_result.get('on_time_tasks', 0)
         
@@ -256,4 +233,3 @@ class Scheduler:
                 'on_time_improvement': cp_sat_on_time - edf_on_time
             }
         }
-
