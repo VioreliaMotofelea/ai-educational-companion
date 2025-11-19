@@ -1,0 +1,16 @@
+user_id,name,email,preferred_domains,experience_level,learning_style,created_at
+1,User_1,user1@example.com,Mathematics|Computer Science|Biology,Beginner,Auditory,2025-11-02T07:42:45.985708
+2,User_2,user2@example.com,Mathematics|Music|Philosophy,Advanced,Reading,2025-11-15T07:42:45.985708
+3,User_3,user3@example.com,Mathematics,Beginner,Auditory,2025-09-16T07:42:45.985708
+4,User_4,user4@example.com,Computer Science|Music|Chemistry,Advanced,Reading,2025-10-22T07:42:45.985708
+5,User_5,user5@example.com,Philosophy|Biology,Beginner,Auditory,2025-08-22T07:42:45.985708
+6,User_6,user6@example.com,Literature|Biology,Beginner,Auditory,2025-10-07T07:42:45.985708
+7,User_7,user7@example.com,Mathematics,Intermediate,Visual,2025-10-05T07:42:45.985708
+8,User_8,user8@example.com,Philosophy|Biology,Beginner,Reading,2025-09-12T07:42:45.985708
+9,User_9,user9@example.com,History,Beginner,Kinesthetic,2025-08-31T07:42:45.985708
+10,User_10,user10@example.com,Literature|Chemistry|Mathematics,Beginner,Auditory,2025-10-13T07:42:45.985708
+11,User_11,user11@example.com,Chemistry,Beginner,Reading,2025-10-15T07:42:45.985708
+12,User_12,user12@example.com,Literature|Physics,Intermediate,Kinesthetic,2025-10-24T07:42:45.985708
+13,User_13,user13@example.com,Biology|Mathematics|Physics,Advanced,Auditory,2025-10-30T07:42:45.985708
+14,User_14,user14@example.com,History|Biology,Advanced,Auditory,2025-08-24T07:42:45.985708
+15,User_15,user15@example.com,Computer Science|Chemistry,Beginner,Kinesthetic,2025-09-29T07:42:45.985708

@@ -1,0 +1,31 @@
+task_id,title,description,domain,difficulty,estimated_hours,deadline,priority,status,created_at
+1,Task 1: Review Chemistry,Complete the following task related to Art,History,Advanced,1.46,2025-12-07T07:42:45.986776,Medium,Pending,2025-11-11T07:42:45.986776
+2,Task 2: Review Philosophy,Complete the following task related to History,Philosophy,Intermediate,2.73,2025-11-28T07:42:45.986776,Medium,Pending,2025-11-15T07:42:45.986776
+3,Task 3: Study Mathematics,Complete the following task related to Physics,Physics,Advanced,4.45,2025-12-22T07:42:45.986776,Medium,Completed,2025-11-17T07:42:45.986776
+4,Task 4: Practice Music,Complete the following task related to Biology,Music,Beginner,3.67,2025-12-14T07:42:45.986776,High,Completed,2025-11-16T07:42:45.986776
+5,Task 5: Review Literature,Complete the following task related to Mathematics,Biology,Intermediate,7.19,2026-01-02T07:42:45.986776,Low,In Progress,2025-11-19T07:42:45.986776
+6,Task 6: Review Music,Complete the following task related to Physics,Music,Beginner,7.13,2026-01-05T07:42:45.986776,High,In Progress,2025-10-24T07:42:45.986776
+7,Task 7: Complete Physics,Complete the following task related to Literature,Physics,Advanced,4.55,2025-12-30T07:42:45.986776,High,Pending,2025-10-31T07:42:45.986776
+8,Task 8: Study Literature,Complete the following task related to Biology,Chemistry,Beginner,4.42,2025-12-10T07:42:45.986776,Low,Completed,2025-10-20T07:42:45.986776
+9,Task 9: Practice Mathematics,Complete the following task related to Music,Physics,Beginner,1.6,2025-11-25T07:42:45.986776,High,In Progress,2025-10-20T07:42:45.986776
+10,Task 10: Practice Chemistry,Complete the following task related to Music,Chemistry,Advanced,2.16,2025-12-25T07:42:45.986776,Medium,In Progress,2025-10-29T07:42:45.986776
+11,Task 11: Practice Mathematics,Complete the following task related to Chemistry,Chemistry,Beginner,3.61,2025-12-31T07:42:45.986776,Medium,Pending,2025-11-01T07:42:45.986776
+12,Task 12: Complete Computer Science,Complete the following task related to Mathematics,Computer Science,Beginner,2.61,2025-12-25T07:42:45.986776,Low,Pending,2025-10-23T07:42:45.986776
+13,Task 13: Complete Biology,Complete the following task related to Art,Chemistry,Advanced,1.5,2025-12-11T07:42:45.986776,Low,Completed,2025-10-21T07:42:45.986776
+14,Task 14: Practice Chemistry,Complete the following task related to Art,History,Beginner,5.0,2026-01-15T07:42:45.986776,Low,Pending,2025-10-29T07:42:45.986776
+15,Task 15: Practice Art,Complete the following task related to Computer Science,Mathematics,Beginner,3.48,2025-12-17T07:42:45.986776,Medium,Completed,2025-11-09T07:42:45.986776
+16,Task 16: Complete Chemistry,Complete the following task related to Chemistry,Music,Intermediate,7.03,2026-01-10T07:42:45.986776,Low,In Progress,2025-11-14T07:42:45.986776
+17,Task 17: Study Art,Complete the following task related to Music,Mathematics,Beginner,4.24,2025-12-07T07:42:45.986776,High,Completed,2025-10-24T07:42:45.986776
+18,Task 18: Complete Physics,Complete the following task related to History,Art,Intermediate,7.78,2025-11-20T07:42:45.986776,Low,In Progress,2025-10-22T07:42:45.986776
+19,Task 19: Study History,Complete the following task related to Biology,Art,Intermediate,2.15,2025-11-23T07:42:45.986776,Medium,Completed,2025-10-20T07:42:45.986776
+20,Task 20: Practice Physics,Complete the following task related to Chemistry,Biology,Beginner,7.97,2026-01-05T07:42:45.986776,Low,Completed,2025-10-27T07:42:45.986776
+21,Task 21: Review Computer Science,Complete the following task related to Computer Science,Philosophy,Intermediate,1.43,2025-12-24T07:42:45.986776,High,Completed,2025-11-14T07:42:45.986776
+22,Task 22: Study Physics,Complete the following task related to Mathematics,Philosophy,Beginner,7.73,2025-11-23T07:42:45.986776,High,Pending,2025-11-07T07:42:45.986776
+23,Task 23: Complete Philosophy,Complete the following task related to Philosophy,Computer Science,Advanced,7.59,2025-11-27T07:42:45.986776,Low,In Progress,2025-10-29T07:42:45.986776
+24,Task 24: Review Biology,Complete the following task related to Chemistry,Literature,Beginner,4.96,2025-12-27T07:42:45.986776,Medium,In Progress,2025-11-15T07:42:45.986776
+25,Task 25: Practice Literature,Complete the following task related to Mathematics,Computer Science,Intermediate,5.52,2026-01-01T07:42:45.986776,High,Completed,2025-11-16T07:42:45.986776
+26,Task 26: Review Physics,Complete the following task related to Literature,Mathematics,Beginner,4.76,2025-11-24T07:42:45.986776,Medium,In Progress,2025-11-14T07:42:45.986776
+27,Task 27: Review Philosophy,Complete the following task related to Music,Computer Science,Advanced,6.84,2025-12-18T07:42:45.986776,High,In Progress,2025-10-21T07:42:45.986776
+28,Task 28: Complete Biology,Complete the following task related to Mathematics,Mathematics,Advanced,1.73,2026-01-01T07:42:45.986776,High,Pending,2025-11-11T07:42:45.986776
+29,Task 29: Review Chemistry,Complete the following task related to Biology,Music,Intermediate,5.23,2025-12-08T07:42:45.986776,Medium,Pending,2025-11-17T07:42:45.986776
+30,Task 30: Review Computer Science,Complete the following task related to Computer Science,Literature,Beginner,3.97,2025-12-30T07:42:45.986776,High,In Progress,2025-11-14T07:42:45.986776

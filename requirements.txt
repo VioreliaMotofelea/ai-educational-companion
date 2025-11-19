@@ -1,10 +1,10 @@
 # Core scientific libraries
-numpy==1.26.4
-pandas==2.2.1
-scikit-learn==1.4.1
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
 
 # Optimization (for CP-SAT scheduler)
-ortools==9.8.3296
+ortools>=9.8.0
 
 # API framework (optional but useful for experiments)
 fastapi==0.110.0
