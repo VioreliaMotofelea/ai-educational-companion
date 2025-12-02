@@ -477,4 +477,4 @@ This project is part of academic research at Babeș-Bolyai University.
 
 ---
 
-**Last Updated:** November 2024
+**Last Updated:** November 2025
