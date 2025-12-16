@@ -1,0 +1,944 @@
+user_id,name,email,preferred_domains,experience_level,learning_style,created_at
+1,User_1,user1@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+2,User_2,user2@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+3,User_3,user3@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+4,User_4,user4@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+5,User_5,user5@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+6,User_6,user6@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+7,User_7,user7@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+8,User_8,user8@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+9,User_9,user9@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+10,User_10,user10@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+11,User_11,user11@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+12,User_12,user12@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+13,User_13,user13@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+14,User_14,user14@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+15,User_15,user15@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+16,User_16,user16@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+17,User_17,user17@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+18,User_18,user18@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+19,User_19,user19@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+20,User_20,user20@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+21,User_21,user21@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+22,User_22,user22@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+23,User_23,user23@movielens.edu,Art,Intermediate,Reading,2025-12-16T22:28:47.457440
+24,User_24,user24@movielens.edu,Art,Intermediate,Reading,2025-12-16T22:28:47.457440
+25,User_25,user25@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+26,User_26,user26@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+27,User_27,user27@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+28,User_28,user28@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+29,User_29,user29@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+30,User_30,user30@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+31,User_31,user31@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+32,User_32,user32@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+33,User_33,user33@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+34,User_34,user34@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+35,User_35,user35@movielens.edu,General,Beginner,Reading,2025-12-16T22:28:47.457440
+36,User_36,user36@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+37,User_37,user37@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+38,User_38,user38@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+39,User_39,user39@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+40,User_40,user40@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+41,User_41,user41@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+42,User_42,user42@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+43,User_43,user43@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+44,User_44,user44@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+45,User_45,user45@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+46,User_46,user46@movielens.edu,Business,Intermediate,Reading,2025-12-16T22:28:47.457440
+47,User_47,user47@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+48,User_48,user48@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+49,User_49,user49@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+50,User_50,user50@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+51,User_51,user51@movielens.edu,Education,Intermediate,Visual,2025-12-16T22:28:47.457440
+52,User_52,user52@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+53,User_53,user53@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+54,User_54,user54@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+55,User_55,user55@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+56,User_56,user56@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+57,User_57,user57@movielens.edu,General,Beginner,Visual,2025-12-16T22:28:47.457440
+58,User_58,user58@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+59,User_59,user59@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+60,User_60,user60@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+61,User_61,user61@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+62,User_62,user62@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+63,User_63,user63@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+64,User_64,user64@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+65,User_65,user65@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+66,User_66,user66@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+67,User_67,user67@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+68,User_68,user68@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+69,User_69,user69@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+70,User_70,user70@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+71,User_71,user71@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+72,User_72,user72@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+73,User_73,user73@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+74,User_74,user74@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+75,User_75,user75@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+76,User_76,user76@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+77,User_77,user77@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+78,User_78,user78@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+79,User_79,user79@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+80,User_80,user80@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+81,User_81,user81@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+82,User_82,user82@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+83,User_83,user83@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+84,User_84,user84@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+85,User_85,user85@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+86,User_86,user86@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+87,User_87,user87@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+88,User_88,user88@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+89,User_89,user89@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+90,User_90,user90@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+91,User_91,user91@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+92,User_92,user92@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+93,User_93,user93@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+94,User_94,user94@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+95,User_95,user95@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+96,User_96,user96@movielens.edu,Art,Intermediate,Reading,2025-12-16T22:28:47.457440
+97,User_97,user97@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+98,User_98,user98@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+99,User_99,user99@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+100,User_100,user100@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+101,User_101,user101@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+102,User_102,user102@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+103,User_103,user103@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+104,User_104,user104@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+105,User_105,user105@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+106,User_106,user106@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+107,User_107,user107@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+108,User_108,user108@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+109,User_109,user109@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+110,User_110,user110@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+111,User_111,user111@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+112,User_112,user112@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+113,User_113,user113@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+114,User_114,user114@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+115,User_115,user115@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+116,User_116,user116@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+117,User_117,user117@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+118,User_118,user118@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+119,User_119,user119@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+120,User_120,user120@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+121,User_121,user121@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+122,User_122,user122@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+123,User_123,user123@movielens.edu,Art,Advanced,Reading,2025-12-16T22:28:47.457440
+124,User_124,user124@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+125,User_125,user125@movielens.edu,History,Intermediate,Visual,2025-12-16T22:28:47.457440
+126,User_126,user126@movielens.edu,History,Intermediate,Reading,2025-12-16T22:28:47.457440
+127,User_127,user127@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+128,User_128,user128@movielens.edu,Business,Intermediate,Reading,2025-12-16T22:28:47.457440
+129,User_129,user129@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+130,User_130,user130@movielens.edu,General,Beginner,Visual,2025-12-16T22:28:47.457440
+131,User_131,user131@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+132,User_132,user132@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+133,User_133,user133@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+134,User_134,user134@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+135,User_135,user135@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+136,User_136,user136@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+137,User_137,user137@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+138,User_138,user138@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+139,User_139,user139@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+140,User_140,user140@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+141,User_141,user141@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+142,User_142,user142@movielens.edu,General,Beginner,Visual,2025-12-16T22:28:47.457440
+143,User_143,user143@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+144,User_144,user144@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+145,User_145,user145@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+146,User_146,user146@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+147,User_147,user147@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+148,User_148,user148@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+149,User_149,user149@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+150,User_150,user150@movielens.edu,Art,Beginner,Reading,2025-12-16T22:28:47.457440
+151,User_151,user151@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+152,User_152,user152@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+153,User_153,user153@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+154,User_154,user154@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+155,User_155,user155@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+156,User_156,user156@movielens.edu,Education,Intermediate,Visual,2025-12-16T22:28:47.457440
+157,User_157,user157@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+158,User_158,user158@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+159,User_159,user159@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+160,User_160,user160@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+161,User_161,user161@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+162,User_162,user162@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+163,User_163,user163@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+164,User_164,user164@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+165,User_165,user165@movielens.edu,General,Beginner,Reading,2025-12-16T22:28:47.457440
+166,User_166,user166@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+167,User_167,user167@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+168,User_168,user168@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+169,User_169,user169@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+170,User_170,user170@movielens.edu,Biology,Advanced,Reading,2025-12-16T22:28:47.457440
+171,User_171,user171@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+172,User_172,user172@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+173,User_173,user173@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+174,User_174,user174@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+175,User_175,user175@movielens.edu,Physics,Intermediate,Reading,2025-12-16T22:28:47.457440
+176,User_176,user176@movielens.edu,Physics,Intermediate,Visual,2025-12-16T22:28:47.457440
+177,User_177,user177@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+178,User_178,user178@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+179,User_179,user179@movielens.edu,Art,Beginner,Visual,2025-12-16T22:28:47.457440
+180,User_180,user180@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+181,User_181,user181@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+182,User_182,user182@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+183,User_183,user183@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+184,User_184,user184@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+185,User_185,user185@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+186,User_186,user186@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+187,User_187,user187@movielens.edu,Education,Intermediate,Visual,2025-12-16T22:28:47.457440
+188,User_188,user188@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+189,User_189,user189@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+190,User_190,user190@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+191,User_191,user191@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+192,User_192,user192@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+193,User_193,user193@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+194,User_194,user194@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+195,User_195,user195@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+196,User_196,user196@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+197,User_197,user197@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+198,User_198,user198@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+199,User_199,user199@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+200,User_200,user200@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+201,User_201,user201@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+202,User_202,user202@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+203,User_203,user203@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+204,User_204,user204@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+205,User_205,user205@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+206,User_206,user206@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+207,User_207,user207@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+208,User_208,user208@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+209,User_209,user209@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+210,User_210,user210@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+211,User_211,user211@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+212,User_212,user212@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+213,User_213,user213@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+214,User_214,user214@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+215,User_215,user215@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+216,User_216,user216@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+217,User_217,user217@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+218,User_218,user218@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+219,User_219,user219@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+220,User_220,user220@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+221,User_221,user221@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+222,User_222,user222@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+223,User_223,user223@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+224,User_224,user224@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+225,User_225,user225@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+226,User_226,user226@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+227,User_227,user227@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+228,User_228,user228@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+229,User_229,user229@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+230,User_230,user230@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+231,User_231,user231@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+232,User_232,user232@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+233,User_233,user233@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+234,User_234,user234@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+235,User_235,user235@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+236,User_236,user236@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+237,User_237,user237@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+238,User_238,user238@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+239,User_239,user239@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+240,User_240,user240@movielens.edu,Education,Intermediate,Reading,2025-12-16T22:28:47.457440
+241,User_241,user241@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+242,User_242,user242@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+243,User_243,user243@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+244,User_244,user244@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+245,User_245,user245@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+246,User_246,user246@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+247,User_247,user247@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+248,User_248,user248@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+249,User_249,user249@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+250,User_250,user250@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+251,User_251,user251@movielens.edu,Biology,Intermediate,Visual,2025-12-16T22:28:47.457440
+252,User_252,user252@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+253,User_253,user253@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+254,User_254,user254@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+255,User_255,user255@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+256,User_256,user256@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+257,User_257,user257@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+258,User_258,user258@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+259,User_259,user259@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+260,User_260,user260@movielens.edu,Art,Advanced,Reading,2025-12-16T22:28:47.457440
+261,User_261,user261@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+262,User_262,user262@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+263,User_263,user263@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+264,User_264,user264@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+265,User_265,user265@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+266,User_266,user266@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+267,User_267,user267@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+268,User_268,user268@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+269,User_269,user269@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+270,User_270,user270@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+271,User_271,user271@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+272,User_272,user272@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+273,User_273,user273@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+274,User_274,user274@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+275,User_275,user275@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+276,User_276,user276@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+277,User_277,user277@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+278,User_278,user278@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+279,User_279,user279@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+280,User_280,user280@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+281,User_281,user281@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+282,User_282,user282@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+283,User_283,user283@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+284,User_284,user284@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+285,User_285,user285@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+286,User_286,user286@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+287,User_287,user287@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+288,User_288,user288@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+289,User_289,user289@movielens.edu,General,Beginner,Visual,2025-12-16T22:28:47.457440
+290,User_290,user290@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+291,User_291,user291@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+292,User_292,user292@movielens.edu,Computer Science,Advanced,Reading,2025-12-16T22:28:47.457440
+293,User_293,user293@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+294,User_294,user294@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+295,User_295,user295@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+296,User_296,user296@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+297,User_297,user297@movielens.edu,Education,Intermediate,Reading,2025-12-16T22:28:47.457440
+298,User_298,user298@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+299,User_299,user299@movielens.edu,Biology,Intermediate,Visual,2025-12-16T22:28:47.457440
+300,User_300,user300@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+301,User_301,user301@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+302,User_302,user302@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+303,User_303,user303@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+304,User_304,user304@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+305,User_305,user305@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+306,User_306,user306@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+307,User_307,user307@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+308,User_308,user308@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+309,User_309,user309@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+310,User_310,user310@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+311,User_311,user311@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+312,User_312,user312@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+313,User_313,user313@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+314,User_314,user314@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+315,User_315,user315@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+316,User_316,user316@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+317,User_317,user317@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+318,User_318,user318@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+319,User_319,user319@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+320,User_320,user320@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+321,User_321,user321@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+322,User_322,user322@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+323,User_323,user323@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+324,User_324,user324@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+325,User_325,user325@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+326,User_326,user326@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+327,User_327,user327@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+328,User_328,user328@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+329,User_329,user329@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+330,User_330,user330@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+331,User_331,user331@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+332,User_332,user332@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+333,User_333,user333@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+334,User_334,user334@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+335,User_335,user335@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+336,User_336,user336@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+337,User_337,user337@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+338,User_338,user338@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+339,User_339,user339@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+340,User_340,user340@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+341,User_341,user341@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+342,User_342,user342@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+343,User_343,user343@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+344,User_344,user344@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+345,User_345,user345@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+346,User_346,user346@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+347,User_347,user347@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+348,User_348,user348@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+349,User_349,user349@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+350,User_350,user350@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+351,User_351,user351@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+352,User_352,user352@movielens.edu,Computer Science,Advanced,Reading,2025-12-16T22:28:47.457440
+353,User_353,user353@movielens.edu,Physics,Intermediate,Visual,2025-12-16T22:28:47.457440
+354,User_354,user354@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+355,User_355,user355@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+356,User_356,user356@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+357,User_357,user357@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+358,User_358,user358@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+359,User_359,user359@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+360,User_360,user360@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+361,User_361,user361@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+362,User_362,user362@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+363,User_363,user363@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+364,User_364,user364@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+365,User_365,user365@movielens.edu,History,Intermediate,Visual,2025-12-16T22:28:47.457440
+366,User_366,user366@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+367,User_367,user367@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+368,User_368,user368@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+369,User_369,user369@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+370,User_370,user370@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+371,User_371,user371@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+372,User_372,user372@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+373,User_373,user373@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+374,User_374,user374@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+375,User_375,user375@movielens.edu,Art,Beginner,Visual,2025-12-16T22:28:47.457440
+376,User_376,user376@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+377,User_377,user377@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+378,User_378,user378@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+379,User_379,user379@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+380,User_380,user380@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+381,User_381,user381@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+382,User_382,user382@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+383,User_383,user383@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+384,User_384,user384@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+385,User_385,user385@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+386,User_386,user386@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+387,User_387,user387@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+388,User_388,user388@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+389,User_389,user389@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+390,User_390,user390@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+391,User_391,user391@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+392,User_392,user392@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+393,User_393,user393@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+394,User_394,user394@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+395,User_395,user395@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+396,User_396,user396@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+397,User_397,user397@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+398,User_398,user398@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+399,User_399,user399@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+400,User_400,user400@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+401,User_401,user401@movielens.edu,Biology,Advanced,Reading,2025-12-16T22:28:47.457440
+402,User_402,user402@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+403,User_403,user403@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+404,User_404,user404@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+405,User_405,user405@movielens.edu,Biology,Intermediate,Reading,2025-12-16T22:28:47.457440
+406,User_406,user406@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+407,User_407,user407@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+408,User_408,user408@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+409,User_409,user409@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+410,User_410,user410@movielens.edu,Art,Intermediate,Reading,2025-12-16T22:28:47.457440
+411,User_411,user411@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+412,User_412,user412@movielens.edu,Education,Intermediate,Visual,2025-12-16T22:28:47.457440
+413,User_413,user413@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+414,User_414,user414@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+415,User_415,user415@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+416,User_416,user416@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+417,User_417,user417@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+418,User_418,user418@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+419,User_419,user419@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+420,User_420,user420@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+421,User_421,user421@movielens.edu,Computer Science,Advanced,Reading,2025-12-16T22:28:47.457440
+422,User_422,user422@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+423,User_423,user423@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+424,User_424,user424@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+425,User_425,user425@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+426,User_426,user426@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+427,User_427,user427@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+428,User_428,user428@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+429,User_429,user429@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+430,User_430,user430@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+431,User_431,user431@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+432,User_432,user432@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+433,User_433,user433@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+434,User_434,user434@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+435,User_435,user435@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+436,User_436,user436@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+437,User_437,user437@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+438,User_438,user438@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+439,User_439,user439@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+440,User_440,user440@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+441,User_441,user441@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+442,User_442,user442@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+443,User_443,user443@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+444,User_444,user444@movielens.edu,History,Advanced,Reading,2025-12-16T22:28:47.457440
+445,User_445,user445@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+446,User_446,user446@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+447,User_447,user447@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+448,User_448,user448@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+449,User_449,user449@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+450,User_450,user450@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+451,User_451,user451@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+452,User_452,user452@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+453,User_453,user453@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+454,User_454,user454@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+455,User_455,user455@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+456,User_456,user456@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+457,User_457,user457@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+458,User_458,user458@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+459,User_459,user459@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+460,User_460,user460@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+461,User_461,user461@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+462,User_462,user462@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+463,User_463,user463@movielens.edu,Biology,Advanced,Reading,2025-12-16T22:28:47.457440
+464,User_464,user464@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+465,User_465,user465@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+466,User_466,user466@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+467,User_467,user467@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+468,User_468,user468@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+469,User_469,user469@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+470,User_470,user470@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+471,User_471,user471@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+472,User_472,user472@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+473,User_473,user473@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+474,User_474,user474@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+475,User_475,user475@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+476,User_476,user476@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+477,User_477,user477@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+478,User_478,user478@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+479,User_479,user479@movielens.edu,Education,Intermediate,Visual,2025-12-16T22:28:47.457440
+480,User_480,user480@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+481,User_481,user481@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+482,User_482,user482@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+483,User_483,user483@movielens.edu,Physics,Intermediate,Visual,2025-12-16T22:28:47.457440
+484,User_484,user484@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+485,User_485,user485@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+486,User_486,user486@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+487,User_487,user487@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+488,User_488,user488@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+489,User_489,user489@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+490,User_490,user490@movielens.edu,Art,Intermediate,Reading,2025-12-16T22:28:47.457440
+491,User_491,user491@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+492,User_492,user492@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+493,User_493,user493@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+494,User_494,user494@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+495,User_495,user495@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+496,User_496,user496@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+497,User_497,user497@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+498,User_498,user498@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+499,User_499,user499@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+500,User_500,user500@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+501,User_501,user501@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+502,User_502,user502@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+503,User_503,user503@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+504,User_504,user504@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+505,User_505,user505@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+506,User_506,user506@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+507,User_507,user507@movielens.edu,Literature,Beginner,Reading,2025-12-16T22:28:47.457440
+508,User_508,user508@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+509,User_509,user509@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+510,User_510,user510@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+511,User_511,user511@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+512,User_512,user512@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+513,User_513,user513@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+514,User_514,user514@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+515,User_515,user515@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+516,User_516,user516@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+517,User_517,user517@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+518,User_518,user518@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+519,User_519,user519@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+520,User_520,user520@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+521,User_521,user521@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+522,User_522,user522@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+523,User_523,user523@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+524,User_524,user524@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+525,User_525,user525@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+526,User_526,user526@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+527,User_527,user527@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+528,User_528,user528@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+529,User_529,user529@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+530,User_530,user530@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+531,User_531,user531@movielens.edu,Business,Intermediate,Reading,2025-12-16T22:28:47.457440
+532,User_532,user532@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+533,User_533,user533@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+534,User_534,user534@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+535,User_535,user535@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+536,User_536,user536@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+537,User_537,user537@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+538,User_538,user538@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+539,User_539,user539@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+540,User_540,user540@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+541,User_541,user541@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+542,User_542,user542@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+543,User_543,user543@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+544,User_544,user544@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+545,User_545,user545@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+546,User_546,user546@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+547,User_547,user547@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+548,User_548,user548@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+549,User_549,user549@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+550,User_550,user550@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+551,User_551,user551@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+552,User_552,user552@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+553,User_553,user553@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+554,User_554,user554@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+555,User_555,user555@movielens.edu,Education,Intermediate,Reading,2025-12-16T22:28:47.457440
+556,User_556,user556@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+557,User_557,user557@movielens.edu,Literature,Intermediate,Reading,2025-12-16T22:28:47.457440
+558,User_558,user558@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+559,User_559,user559@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+560,User_560,user560@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+561,User_561,user561@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+562,User_562,user562@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+563,User_563,user563@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+564,User_564,user564@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+565,User_565,user565@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+566,User_566,user566@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+567,User_567,user567@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+568,User_568,user568@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+569,User_569,user569@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+570,User_570,user570@movielens.edu,Education,Intermediate,Visual,2025-12-16T22:28:47.457440
+571,User_571,user571@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+572,User_572,user572@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+573,User_573,user573@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+574,User_574,user574@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+575,User_575,user575@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+576,User_576,user576@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+577,User_577,user577@movielens.edu,Computer Science,Advanced,Reading,2025-12-16T22:28:47.457440
+578,User_578,user578@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+579,User_579,user579@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+580,User_580,user580@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+581,User_581,user581@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+582,User_582,user582@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+583,User_583,user583@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+584,User_584,user584@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+585,User_585,user585@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+586,User_586,user586@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+587,User_587,user587@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+588,User_588,user588@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+589,User_589,user589@movielens.edu,History,Intermediate,Visual,2025-12-16T22:28:47.457440
+590,User_590,user590@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+591,User_591,user591@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+592,User_592,user592@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+593,User_593,user593@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+594,User_594,user594@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+595,User_595,user595@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+596,User_596,user596@movielens.edu,Art,Beginner,Visual,2025-12-16T22:28:47.457440
+597,User_597,user597@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+598,User_598,user598@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+599,User_599,user599@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+600,User_600,user600@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+601,User_601,user601@movielens.edu,Art,Beginner,Reading,2025-12-16T22:28:47.457440
+602,User_602,user602@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+603,User_603,user603@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+604,User_604,user604@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+605,User_605,user605@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+606,User_606,user606@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+607,User_607,user607@movielens.edu,Biology,Advanced,Reading,2025-12-16T22:28:47.457440
+608,User_608,user608@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+609,User_609,user609@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+610,User_610,user610@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+611,User_611,user611@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+612,User_612,user612@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+613,User_613,user613@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+614,User_614,user614@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+615,User_615,user615@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+616,User_616,user616@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+617,User_617,user617@movielens.edu,Literature,Intermediate,Reading,2025-12-16T22:28:47.457440
+618,User_618,user618@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+619,User_619,user619@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+620,User_620,user620@movielens.edu,Literature,Beginner,Reading,2025-12-16T22:28:47.457440
+621,User_621,user621@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+622,User_622,user622@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+623,User_623,user623@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+624,User_624,user624@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+625,User_625,user625@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+626,User_626,user626@movielens.edu,Physics,Intermediate,Visual,2025-12-16T22:28:47.457440
+627,User_627,user627@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+628,User_628,user628@movielens.edu,General,Beginner,Visual,2025-12-16T22:28:47.457440
+629,User_629,user629@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+630,User_630,user630@movielens.edu,Biology,Intermediate,Reading,2025-12-16T22:28:47.457440
+631,User_631,user631@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+632,User_632,user632@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+633,User_633,user633@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+634,User_634,user634@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+635,User_635,user635@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+636,User_636,user636@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+637,User_637,user637@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+638,User_638,user638@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+639,User_639,user639@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+640,User_640,user640@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+641,User_641,user641@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+642,User_642,user642@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+643,User_643,user643@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+644,User_644,user644@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+645,User_645,user645@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+646,User_646,user646@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+647,User_647,user647@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+648,User_648,user648@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+649,User_649,user649@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+650,User_650,user650@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+651,User_651,user651@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+652,User_652,user652@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+653,User_653,user653@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+654,User_654,user654@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+655,User_655,user655@movielens.edu,Biology,Advanced,Reading,2025-12-16T22:28:47.457440
+656,User_656,user656@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+657,User_657,user657@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+658,User_658,user658@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+659,User_659,user659@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+660,User_660,user660@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+661,User_661,user661@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+662,User_662,user662@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+663,User_663,user663@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+664,User_664,user664@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+665,User_665,user665@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+666,User_666,user666@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+667,User_667,user667@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+668,User_668,user668@movielens.edu,Literature,Intermediate,Reading,2025-12-16T22:28:47.457440
+669,User_669,user669@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+670,User_670,user670@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+671,User_671,user671@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+672,User_672,user672@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+673,User_673,user673@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+674,User_674,user674@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+675,User_675,user675@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+676,User_676,user676@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+677,User_677,user677@movielens.edu,General,Beginner,Visual,2025-12-16T22:28:47.457440
+678,User_678,user678@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+679,User_679,user679@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+680,User_680,user680@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+681,User_681,user681@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+682,User_682,user682@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+683,User_683,user683@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+684,User_684,user684@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+685,User_685,user685@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+686,User_686,user686@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+687,User_687,user687@movielens.edu,Biology,Advanced,Reading,2025-12-16T22:28:47.457440
+688,User_688,user688@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+689,User_689,user689@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+690,User_690,user690@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+691,User_691,user691@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+692,User_692,user692@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+693,User_693,user693@movielens.edu,Biology,Advanced,Reading,2025-12-16T22:28:47.457440
+694,User_694,user694@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+695,User_695,user695@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+696,User_696,user696@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+697,User_697,user697@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+698,User_698,user698@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+699,User_699,user699@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+700,User_700,user700@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+701,User_701,user701@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+702,User_702,user702@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+703,User_703,user703@movielens.edu,Education,Intermediate,Visual,2025-12-16T22:28:47.457440
+704,User_704,user704@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+705,User_705,user705@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+706,User_706,user706@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+707,User_707,user707@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+708,User_708,user708@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+709,User_709,user709@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+710,User_710,user710@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+711,User_711,user711@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+712,User_712,user712@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+713,User_713,user713@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+714,User_714,user714@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+715,User_715,user715@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+716,User_716,user716@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+717,User_717,user717@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+718,User_718,user718@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+719,User_719,user719@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+720,User_720,user720@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+721,User_721,user721@movielens.edu,Art,Intermediate,Reading,2025-12-16T22:28:47.457440
+722,User_722,user722@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+723,User_723,user723@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+724,User_724,user724@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+725,User_725,user725@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+726,User_726,user726@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+727,User_727,user727@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+728,User_728,user728@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+729,User_729,user729@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+730,User_730,user730@movielens.edu,Physics,Advanced,Reading,2025-12-16T22:28:47.457440
+731,User_731,user731@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+732,User_732,user732@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+733,User_733,user733@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+734,User_734,user734@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+735,User_735,user735@movielens.edu,Biology,Intermediate,Reading,2025-12-16T22:28:47.457440
+736,User_736,user736@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+737,User_737,user737@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+738,User_738,user738@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+739,User_739,user739@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+740,User_740,user740@movielens.edu,Education,Intermediate,Reading,2025-12-16T22:28:47.457440
+741,User_741,user741@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+742,User_742,user742@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+743,User_743,user743@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+744,User_744,user744@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+745,User_745,user745@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+746,User_746,user746@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+747,User_747,user747@movielens.edu,General,Beginner,Visual,2025-12-16T22:28:47.457440
+748,User_748,user748@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+749,User_749,user749@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+750,User_750,user750@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+751,User_751,user751@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+752,User_752,user752@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+753,User_753,user753@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+754,User_754,user754@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+755,User_755,user755@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+756,User_756,user756@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+757,User_757,user757@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+758,User_758,user758@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+759,User_759,user759@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+760,User_760,user760@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+761,User_761,user761@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+762,User_762,user762@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+763,User_763,user763@movielens.edu,Physics,Intermediate,Visual,2025-12-16T22:28:47.457440
+764,User_764,user764@movielens.edu,Education,Intermediate,Reading,2025-12-16T22:28:47.457440
+765,User_765,user765@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+766,User_766,user766@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+767,User_767,user767@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+768,User_768,user768@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+769,User_769,user769@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+770,User_770,user770@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+771,User_771,user771@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+772,User_772,user772@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+773,User_773,user773@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+774,User_774,user774@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+775,User_775,user775@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+776,User_776,user776@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+777,User_777,user777@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+778,User_778,user778@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+779,User_779,user779@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+780,User_780,user780@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+781,User_781,user781@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+782,User_782,user782@movielens.edu,Art,Intermediate,Reading,2025-12-16T22:28:47.457440
+783,User_783,user783@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+784,User_784,user784@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+785,User_785,user785@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+786,User_786,user786@movielens.edu,Mathematics,Advanced,Reading,2025-12-16T22:28:47.457440
+787,User_787,user787@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+788,User_788,user788@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+789,User_789,user789@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+790,User_790,user790@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+791,User_791,user791@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+792,User_792,user792@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+793,User_793,user793@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+794,User_794,user794@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+795,User_795,user795@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+796,User_796,user796@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+797,User_797,user797@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+798,User_798,user798@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+799,User_799,user799@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+800,User_800,user800@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+801,User_801,user801@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+802,User_802,user802@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+803,User_803,user803@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+804,User_804,user804@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+805,User_805,user805@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+806,User_806,user806@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+807,User_807,user807@movielens.edu,Biology,Advanced,Reading,2025-12-16T22:28:47.457440
+808,User_808,user808@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+809,User_809,user809@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+810,User_810,user810@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+811,User_811,user811@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+812,User_812,user812@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+813,User_813,user813@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+814,User_814,user814@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+815,User_815,user815@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+816,User_816,user816@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+817,User_817,user817@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+818,User_818,user818@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+819,User_819,user819@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+820,User_820,user820@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+821,User_821,user821@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+822,User_822,user822@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+823,User_823,user823@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+824,User_824,user824@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+825,User_825,user825@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+826,User_826,user826@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+827,User_827,user827@movielens.edu,Mathematics,Intermediate,Reading,2025-12-16T22:28:47.457440
+828,User_828,user828@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+829,User_829,user829@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+830,User_830,user830@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+831,User_831,user831@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+832,User_832,user832@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+833,User_833,user833@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+834,User_834,user834@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+835,User_835,user835@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+836,User_836,user836@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+837,User_837,user837@movielens.edu,Art,Advanced,Reading,2025-12-16T22:28:47.457440
+838,User_838,user838@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+839,User_839,user839@movielens.edu,Art,Advanced,Reading,2025-12-16T22:28:47.457440
+840,User_840,user840@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+841,User_841,user841@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+842,User_842,user842@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+843,User_843,user843@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+844,User_844,user844@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+845,User_845,user845@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+846,User_846,user846@movielens.edu,History,Intermediate,Visual,2025-12-16T22:28:47.457440
+847,User_847,user847@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+848,User_848,user848@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+849,User_849,user849@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+850,User_850,user850@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+851,User_851,user851@movielens.edu,General,Beginner,Visual,2025-12-16T22:28:47.457440
+852,User_852,user852@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+853,User_853,user853@movielens.edu,Literature,Advanced,Visual,2025-12-16T22:28:47.457440
+854,User_854,user854@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+855,User_855,user855@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+856,User_856,user856@movielens.edu,Business,Advanced,Reading,2025-12-16T22:28:47.457440
+857,User_857,user857@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+858,User_858,user858@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+859,User_859,user859@movielens.edu,General,Beginner,Reading,2025-12-16T22:28:47.457440
+860,User_860,user860@movielens.edu,History,Advanced,Reading,2025-12-16T22:28:47.457440
+861,User_861,user861@movielens.edu,Computer Science,Advanced,Reading,2025-12-16T22:28:47.457440
+862,User_862,user862@movielens.edu,Business,Intermediate,Visual,2025-12-16T22:28:47.457440
+863,User_863,user863@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+864,User_864,user864@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+865,User_865,user865@movielens.edu,Art,Intermediate,Visual,2025-12-16T22:28:47.457440
+866,User_866,user866@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+867,User_867,user867@movielens.edu,Physics,Intermediate,Visual,2025-12-16T22:28:47.457440
+868,User_868,user868@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+869,User_869,user869@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+870,User_870,user870@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+871,User_871,user871@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+872,User_872,user872@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+873,User_873,user873@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+874,User_874,user874@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+875,User_875,user875@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+876,User_876,user876@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+877,User_877,user877@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+878,User_878,user878@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+879,User_879,user879@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+880,User_880,user880@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+881,User_881,user881@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+882,User_882,user882@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+883,User_883,user883@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+884,User_884,user884@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+885,User_885,user885@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+886,User_886,user886@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+887,User_887,user887@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+888,User_888,user888@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+889,User_889,user889@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+890,User_890,user890@movielens.edu,Computer Science,Advanced,Visual,2025-12-16T22:28:47.457440
+891,User_891,user891@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+892,User_892,user892@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+893,User_893,user893@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+894,User_894,user894@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+895,User_895,user895@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+896,User_896,user896@movielens.edu,Literature,Intermediate,Visual,2025-12-16T22:28:47.457440
+897,User_897,user897@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+898,User_898,user898@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+899,User_899,user899@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+900,User_900,user900@movielens.edu,History,Advanced,Visual,2025-12-16T22:28:47.457440
+901,User_901,user901@movielens.edu,Business,Advanced,Visual,2025-12-16T22:28:47.457440
+902,User_902,user902@movielens.edu,Art,Advanced,Reading,2025-12-16T22:28:47.457440
+903,User_903,user903@movielens.edu,Education,Intermediate,Visual,2025-12-16T22:28:47.457440
+904,User_904,user904@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+905,User_905,user905@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+906,User_906,user906@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+907,User_907,user907@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+908,User_908,user908@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+909,User_909,user909@movielens.edu,Education,Advanced,Reading,2025-12-16T22:28:47.457440
+910,User_910,user910@movielens.edu,Biology,Intermediate,Visual,2025-12-16T22:28:47.457440
+911,User_911,user911@movielens.edu,Literature,Advanced,Reading,2025-12-16T22:28:47.457440
+912,User_912,user912@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+913,User_913,user913@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+914,User_914,user914@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+915,User_915,user915@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+916,User_916,user916@movielens.edu,Mathematics,Intermediate,Visual,2025-12-16T22:28:47.457440
+917,User_917,user917@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+918,User_918,user918@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+919,User_919,user919@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+920,User_920,user920@movielens.edu,Art,Intermediate,Reading,2025-12-16T22:28:47.457440
+921,User_921,user921@movielens.edu,Computer Science,Beginner,Reading,2025-12-16T22:28:47.457440
+922,User_922,user922@movielens.edu,General,Intermediate,Reading,2025-12-16T22:28:47.457440
+923,User_923,user923@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+924,User_924,user924@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+925,User_925,user925@movielens.edu,Business,Beginner,Reading,2025-12-16T22:28:47.457440
+926,User_926,user926@movielens.edu,Art,Advanced,Visual,2025-12-16T22:28:47.457440
+927,User_927,user927@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+928,User_928,user928@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+929,User_929,user929@movielens.edu,Physics,Advanced,Visual,2025-12-16T22:28:47.457440
+930,User_930,user930@movielens.edu,Physics,Intermediate,Reading,2025-12-16T22:28:47.457440
+931,User_931,user931@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+932,User_932,user932@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+933,User_933,user933@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440
+934,User_934,user934@movielens.edu,Mathematics,Advanced,Visual,2025-12-16T22:28:47.457440
+935,User_935,user935@movielens.edu,Biology,Advanced,Visual,2025-12-16T22:28:47.457440
+936,User_936,user936@movielens.edu,General,Intermediate,Visual,2025-12-16T22:28:47.457440
+937,User_937,user937@movielens.edu,Education,Advanced,Visual,2025-12-16T22:28:47.457440
+938,User_938,user938@movielens.edu,Computer Science,Advanced,Reading,2025-12-16T22:28:47.457440
+939,User_939,user939@movielens.edu,Computer Science,Intermediate,Reading,2025-12-16T22:28:47.457440
+940,User_940,user940@movielens.edu,General,Advanced,Visual,2025-12-16T22:28:47.457440
+941,User_941,user941@movielens.edu,Computer Science,Beginner,Visual,2025-12-16T22:28:47.457440
+942,User_942,user942@movielens.edu,General,Advanced,Reading,2025-12-16T22:28:47.457440
+943,User_943,user943@movielens.edu,Computer Science,Intermediate,Visual,2025-12-16T22:28:47.457440

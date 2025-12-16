@@ -248,7 +248,7 @@ def load_movielens_data(ml_dir):
         'rating': ratings['rating'],
         'completed': True,  # If rated, assume completed
         'time_spent_minutes': 120,  # Average viewing time
-        'interaction_date': pd.to_datetime(ratings['timestamp'], unit='s').isoformat()
+        'interaction_date': pd.to_datetime(ratings['timestamp'], unit='s').dt.strftime('%Y-%m-%dT%H:%M:%S')
     })
     
     print(f"Preprocessed data:")
